@@ -3,6 +3,12 @@ global:
   evaluation_interval: 15s
 
 scrape_configs:
+  # Linux host CPU, memory, disks, and network metrics.
+  - job_name: 'node-exporter'
+    static_configs:
+      - targets: ['host-gateway:9100']
+
+  # Node Applications
   - job_name: 'prestige-hostel-local'
     metrics_path: /prestige-hostel/v1/metrics
     static_configs:
@@ -11,22 +17,15 @@ scrape_configs:
       - source_labels: [__address__]
         target_label: instance
         replacement: localhost:5900  # Match what the dashboard expects
-
-  # Example second app running on the host at port 6000 (disabled).
-  # Uncomment this job when the app exposes its /metrics endpoint.
-  # - job_name: 'second-app-local'
-  #   metrics_path: /metrics
-  #   static_configs:
-  #     - targets: ['host-gateway:6000']
-  #   relabel_configs:
-  #     - source_labels: [__address__]
-  #       target_label: instance
-  #       replacement: localhost:6000
-
-  # Linux host CPU, memory, disks, and network metrics.
-  - job_name: 'node-exporter'
+  
+  - job_name: 'murandi-local'
+    metrics_path: /murandi/v1/metrics
     static_configs:
-      - targets: ['host-gateway:9100']
+      - targets: ['host-gateway:5700'] #PM2 instance
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
+        replacement: localhost:5700  # Match what the dashboard expects
 
 
   

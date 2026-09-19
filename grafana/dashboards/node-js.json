@@ -24,7 +24,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "dfymrlzr4x3i8b"
+        "uid": "afyoqtasjeakgb"
       },
       "fieldConfig": {
         "defaults": {
@@ -113,7 +113,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "dfymrlzr4x3i8b"
+            "uid": "afyoqtasjeakgb"
           },
           "expr": "irate(process_cpu_user_seconds_total{instance=~\"$instance\"}[2m]) * 100",
           "format": "time_series",
@@ -124,7 +124,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "dfymrlzr4x3i8b"
+            "uid": "afyoqtasjeakgb"
           },
           "expr": "irate(process_cpu_system_seconds_total{instance=~\"$instance\"}[2m]) * 100",
           "format": "time_series",
@@ -139,7 +139,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "dfymrlzr4x3i8b"
+        "uid": "afyoqtasjeakgb"
       },
       "fieldConfig": {
         "defaults": {
@@ -228,7 +228,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "dfymrlzr4x3i8b"
+            "uid": "afyoqtasjeakgb"
           },
           "expr": "nodejs_eventloop_lag_seconds{instance=~\"$instance\"}",
           "format": "time_series",
@@ -243,7 +243,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "dfymrlzr4x3i8b"
+        "uid": "afyoqtasjeakgb"
       },
       "fieldConfig": {
         "defaults": {
@@ -295,7 +295,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "dfymrlzr4x3i8b"
+            "uid": "afyoqtasjeakgb"
           },
           "expr": "max by (version) (nodejs_version_info{instance=~\"$instance\"})",
           "format": "time_series",
@@ -313,7 +313,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "dfymrlzr4x3i8b"
+        "uid": "afyoqtasjeakgb"
       },
       "fieldConfig": {
         "defaults": {
@@ -369,7 +369,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "dfymrlzr4x3i8b"
+            "uid": "afyoqtasjeakgb"
           },
           "expr": "sum(changes(process_start_time_seconds{instance=~\"$instance\"}[$__range]))",
           "format": "time_series",
@@ -387,7 +387,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "dfymrlzr4x3i8b"
+        "uid": "afyoqtasjeakgb"
       },
       "fieldConfig": {
         "defaults": {
@@ -476,7 +476,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "dfymrlzr4x3i8b"
+            "uid": "afyoqtasjeakgb"
           },
           "expr": "process_resident_memory_bytes{instance=~\"$instance\"}",
           "format": "time_series",
@@ -487,7 +487,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "dfymrlzr4x3i8b"
+            "uid": "afyoqtasjeakgb"
           },
           "expr": "nodejs_heap_size_total_bytes{instance=~\"$instance\"}",
           "format": "time_series",
@@ -498,7 +498,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "dfymrlzr4x3i8b"
+            "uid": "afyoqtasjeakgb"
           },
           "expr": "nodejs_heap_size_used_bytes{instance=~\"$instance\"}",
           "format": "time_series",
@@ -509,7 +509,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "dfymrlzr4x3i8b"
+            "uid": "afyoqtasjeakgb"
           },
           "expr": "nodejs_external_memory_bytes{instance=~\"$instance\"}",
           "format": "time_series",
@@ -524,7 +524,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "dfymrlzr4x3i8b"
+        "uid": "afyoqtasjeakgb"
       },
       "fieldConfig": {
         "defaults": {
@@ -613,7 +613,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "dfymrlzr4x3i8b"
+            "uid": "afyoqtasjeakgb"
           },
           "expr": "nodejs_active_handles_total{instance=~\"$instance\"}",
           "format": "time_series",
@@ -624,7 +624,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "dfymrlzr4x3i8b"
+            "uid": "afyoqtasjeakgb"
           },
           "expr": "nodejs_active_requests_total{instance=~\"$instance\"}",
           "format": "time_series",
@@ -639,7 +639,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "dfymrlzr4x3i8b"
+        "uid": "afyoqtasjeakgb"
       },
       "fieldConfig": {
         "defaults": {
@@ -728,7 +728,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "dfymrlzr4x3i8b"
+            "uid": "afyoqtasjeakgb"
           },
           "expr": "nodejs_heap_space_size_total_bytes{instance=~\"$instance\"}",
           "format": "time_series",
@@ -743,7 +743,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "dfymrlzr4x3i8b"
+        "uid": "afyoqtasjeakgb"
       },
       "fieldConfig": {
         "defaults": {
@@ -832,7 +832,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "dfymrlzr4x3i8b"
+            "uid": "afyoqtasjeakgb"
           },
           "expr": "nodejs_heap_space_size_used_bytes{instance=~\"$instance\"}",
           "format": "time_series",
@@ -847,7 +847,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "dfymrlzr4x3i8b"
+        "uid": "afyoqtasjeakgb"
       },
       "fieldConfig": {
         "defaults": {
@@ -936,7 +936,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "dfymrlzr4x3i8b"
+            "uid": "afyoqtasjeakgb"
           },
           "expr": "nodejs_heap_space_size_available_bytes{instance=~\"$instance\"}",
           "format": "time_series",
@@ -968,7 +968,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "dfymrlzr4x3i8b"
+          "uid": "afyoqtasjeakgb"
         },
         "definition": "label_values(nodejs_version_info, instance)",
         "includeAll": true,
